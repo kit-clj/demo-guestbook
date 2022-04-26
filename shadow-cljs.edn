@@ -1,0 +1,12 @@
+{:nrepl {:port 7002}
+ :source-paths ["src/cljs"]
+ :dependencies [[binaryage/devtools "1.0.3"]
+                [nrepl "0.8.3"]
+                [reagent "1.1.0"]
+                [cljs-ajax "0.8.4"]]
+ :builds       {:app {:target     :browser
+                      :output-dir "target/classes/cljsbuild/public/js"
+                      :asset-path "/js"
+                      :modules    {:app {:entries [londonclj.guestbook.core]
+                                         :init-fn londonclj.guestbook.core/init!}}
+                      :devtools   {:after-load londonclj.guestbook.core/mount-root}}}}

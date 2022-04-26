@@ -1,0 +1,8 @@
+{:full-name "londonclj/guestbook"
+ :ns-name   "londonclj.guestbook"
+ :sanitized "londonclj/guestbook"
+ :name      "guestbook"
+ :modules   {:root         "modules"
+             :repositories [{:url  "https://github.com/kit-clj/modules.git"
+                             :tag  "master"
+                             :name "kit-modules"}]}}
