@@ -41,6 +41,9 @@
 
 (def refresh repl/refresh)
 
+(defn conn []
+  (:db.sql/connection state/system))
+
 (comment
   (go)
   (reset))
